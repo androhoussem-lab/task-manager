@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="#">
+    <title>Task Manager</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a class="nav-logo" href="#">AGILE TODO</a>
+            <ul class="navbar-links">
+                <li><a class="nav-link" href="#footer">Tasks</a></li>
+                <li><a class="nav-link" href="#tasks-list">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main >
+        <p id="message"></p>
+        <div class="container">
+            <form action="">
+                <label for="input-task">Task</label>
+                <input class="input" id="input-task" type="text" name="task" placeholder="Task">
+                <label for="start">Start date</label>
+                <input class="input" type="date"  id="start" value="2000-01-01" min="2000-01-01" max="2050-01-01">
+                <label for="end">End date</label>
+                <input class="input" type="date" id="end" value="2000-01-01" min="2000-01-01" max="2050-01-01">
+                <label for="color">Color</label>
+                <input class="input" type="color" id="color" value="#763EDB">
+                <label for="status">Status</label>
+                <select class="input" id="status" name="status">
+                    <option value="0">To do</option>
+                    <option value="1">In progress</option>
+                    <option value="2">To verify</option>
+                    <option value="3">Done</option>
+                </select>
+                <button id="btn-submit">Submit</button>
+                <button id="btn-clear">Clear</button>
+            </form>
+            <h2 id="tasks-list" class="subtitle">TO-DO List</h2>
+            <div id="data" class="data">
+                <ul id="data-list" class="data-list">
+
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <p>&#9400; Created by;Houssem benseghir houssem.macbook@gmail.com</p>
+    </footer>
+
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
